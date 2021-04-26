@@ -1,0 +1,77 @@
+{
+    "name": "KDSubAccount",
+    "fantasyName": "KDSubAccount",
+    "vendor": "Kodella",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "version": "1.0.0",
+    "description": "SCA user interface for subscription preferences management",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/KDSubAccount.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/KDSubAccount/Configuration/KDSubAccount.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/KDSubAccount/Templates/kodella_kdsubaccount_kdsubaccount_details.tpl",
+                    "Modules/KDSubAccount/Templates/Kodella_kdsubaccount_kdsubaccount_list.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/KDSubAccount/Sass/_kdsubaccount-kdsubaccount.scss"
+        },
+        "files": [
+            "Modules/KDSubAccount/Sass/_kdsubaccount-kdsubaccount.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/KDSubAccount/JavaScript/Kodella.KDSubAccount.KDSubAccount.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/KDSubAccount/JavaScript/Kodella.KDSubAccount.KDSubAccount.js",
+                    "Modules/KDSubAccount/JavaScript/KDSubAccount.View.js",
+                    "Modules/KDSubAccount/JavaScript/Kodella.KDSubAccount.KDSubAccount.Model.js",
+                    "Modules/KDSubAccount/JavaScript/Kodella.KDSubAccount.KDSubAccount.SS2Model.js",
+                    "Modules/KDSubAccount/JavaScript/KDSubAccount.View.List.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/KDSubAccount/SuiteScript/Kodella.KDSubAccount.KDSubAccount.js",
+        "files": [
+            "Modules/KDSubAccount/SuiteScript/Kodella.KDSubAccount.KDSubAccount.js",
+            "Modules/KDSubAccount/SuiteScript/KDSubAccount.ServiceController.js"
+        ]
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/KDSubAccount/SuiteScript2/KDSubAccount.Service.ss"
+        ]
+    }
+}

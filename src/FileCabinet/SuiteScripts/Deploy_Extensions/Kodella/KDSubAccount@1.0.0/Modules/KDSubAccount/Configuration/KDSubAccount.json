@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "KDSubAccount.config": {
+            "group": "extensions",
+            "subtab": "KDSubAccount_subtab",
+            "type": "string",
+            "title": "KDSubAccount_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

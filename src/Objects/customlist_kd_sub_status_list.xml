@@ -1,0 +1,29 @@
+<customlist scriptid="customlist_kd_sub_status_list">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>Status</name>
+  <customvalues>
+    <customvalue scriptid="val_213562_5458369_sb1_450">
+      <abbreviation>P</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Paused</value>
+    </customvalue>
+    <customvalue scriptid="val_213563_5458369_sb1_831">
+      <abbreviation>C</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Canceled</value>
+    </customvalue>
+    <customvalue scriptid="val_213564_5458369_sb1_956">
+      <abbreviation>A</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Active</value>
+    </customvalue>
+    <customvalue scriptid="val_943994_5458369_sb1_592">
+      <abbreviation>F</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Finalized</value>
+    </customvalue>
+  </customvalues>
+</customlist>

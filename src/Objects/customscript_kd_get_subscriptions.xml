@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_kd_get_subscriptions">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>KD Get Subscriptions SU</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/KD-Get-Subscriptions_SU.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_kd_get_subscriptions_dpy">
+      <allemployees>T</allemployees>
+      <allpartners>T</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>T</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>KD Get Subscriptions SU</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

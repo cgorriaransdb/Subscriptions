@@ -1,0 +1,78 @@
+{
+    "name": "KDSubscriptionStep",
+    "fantasyName": "KDSubscriptionStep",
+    "vendor": "Kodella",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "version": "1.0.0",
+    "description": "Adding a new Subscription step for checkout",
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/KDSubscriptionStep.Service.ss",
+                "services/KDSubscripionStep.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/KDSubscriptionStep/Configuration/KDSubscriptionStep.json"
+        ]
+    },
+    "templates": {
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/KDSubscriptionStep/Templates/kodella_kdsubscriptionstep_kdsubscriptionstep.tpl",
+                    "Modules/KDSubscriptionStep/Templates/kodella_kdsubscriptionstep_cartpreview.tpl"
+                ]
+            }
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "checkout": "Modules/KDSubscriptionStep/Sass/_kdsubscriptionstep-kdsubscriptionstep.scss"
+        },
+        "files": [
+            "Modules/KDSubscriptionStep/Sass/_kdsubscriptionstep-kdsubscriptionstep.scss"
+        ]
+    },
+    "javascript": {
+        "entry_points": {
+            "checkout": "Modules/KDSubscriptionStep/JavaScript/Kodella.KDSubscriptionStep.KDSubscriptionStep.js"
+        },
+        "application": {
+            "checkout": {
+                "files": [
+                    "Modules/KDSubscriptionStep/JavaScript/Kodella.KDSubscriptionStep.KDSubscriptionStep.js",
+                    "Modules/KDSubscriptionStep/JavaScript/KDSubscriptionStep.View.js",
+                    "Modules/KDSubscriptionStep/JavaScript/Kodella.KDSubscriptionStep.KDSubscriptionStep.Model.js",
+                    "Modules/KDSubscriptionStep/JavaScript/Kodella.KDSubscriptionStep.KDSubscriptionStep.SS2Model.js",
+                    "Modules/KDSubscriptionStep/JavaScript/KDSubscriptionStep.ViewCartPreview.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/KDSubscriptionStep/SuiteScript/Kodella.KDSubscriptionStep.KDSubscriptionStep.js",
+        "files": [
+            "Modules/KDSubscriptionStep/SuiteScript/Kodella.KDSubscriptionStep.KDSubscriptionStep.js",
+            "Modules/KDSubscriptionStep/SuiteScript/KDSubscriptionStep.ServiceController.js"
+        ]
+    },
+    "suitescript2": {
+        "files": [
+            "Modules/KDSubscriptionStep/SuiteScript2/KDSubscriptionStep.Service.ss"
+        ]
+    }
+}

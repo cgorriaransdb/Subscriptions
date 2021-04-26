@@ -1,0 +1,449 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.row-selector-subscription{
+	cursor:pointer;
+
+	// &:hover{
+	// 	//background: #f1f1f1;
+	// 	//cursor: pointer;
+	// 	}
+
+		padding-left: 0px;
+
+		// td{
+		// //padding-left: 0px;
+		// }
+
+	td::last-child{
+
+		border-bottom: none;
+	}	
+}
+
+.row-item{
+
+	padding-left: 0px;
+	width: 45%;
+
+
+}
+
+
+.product-suscription{
+
+	background: $sc-color-theme-content-background;
+	text-align: center;
+	margin-bottom: 10em;
+	padding: 15px;
+
+	@media (max-width: $screen-md-min) {
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}
+
+.img-suscription img{
+	width: 100px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.suscription-time{
+
+	select{
+
+	float: right;
+	width: 60%;
+    padding: 5px;
+    background-color: $sc-color-theme-content-background;
+    border: none;
+	}
+
+	label{
+
+		float: left;
+		line-height: 35px;
+		text-align: left;
+		width: 30%;
+	}
+}
+
+
+.name-suscription{
+
+	//color: #6EA6A8;
+	color: $sc-color-primary;
+}
+
+.suscription-status{
+
+	select{
+
+	float: right;
+    width: 60%;
+    padding: 5px;
+    background-color: $sc-color-theme-content-background;
+    border: none;
+	}
+
+	label{
+
+		float: left;
+		line-height: 35px;
+		text-align: left;
+		width: 30%;
+	}
+}
+
+.button-update-suscription{
+
+	background-color: transparent;
+    border-radius: 1em;
+    padding: 2px 15px;
+	border: 1px solid $sc-color-primary;
+	color: $sc-color-primary;
+	background-color: transparent;
+	min-width: 190px;
+	text-align: center;
+	margin-bottom: 20px;
+	
+	&:hover:not([disabled]){
+		color: white;
+		background-color:$sc-color-primary; 
+	}
+	// width: 90%;
+    // margin-bottom: 8px;
+    // padding: 7px;
+    // background: #6ea6aa;
+
+}
+
+.p_price{
+
+	padding: 15px;
+}
+
+.recordviews-row {
+	&:hover {
+		background: $sc-color-theme-content-background;
+	}
+}
+
+.case-list-content-table-header-row-title {
+	@media (max-width: $screen-md) {
+		margin: 0;
+		width: 100%;
+	}
+}
+
+.Subscriptions {
+	margin-bottom: 4em;
+
+	.case-list-content-table-header-row-status{
+		width: 15%;
+
+		&.row-endDate{
+			width: 25%;
+			text-align: center;
+		}
+	}
+}
+
+a.list-edit-subscription-btn{
+	padding: 7px 15px;
+	border-radius: 1em;
+	color: $sc-color-primary;
+	background-color: transparent;
+	border: 1px solid $sc-color-primary;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+.subscription-details-input,
+select#custcol_kd_subscriptions.subscription-details-input{
+	border: 0;
+    background-color: white;
+	width: 100%;
+	outline: none;
+	color: black;
+}
+
+.size-alert{
+	width: 100%;
+    color: #d14414;
+    text-align: left;
+    padding: 0 0 5px 10px;
+}
+
+.custom-invalid-input-value{
+	color: #d14414;
+	border: 1px solid #d14414;
+}
+
+.sub-row-anchor{
+	cursor:pointer;
+}
+
+th.case-list-content-table-header-row-title{
+	padding-left: 15px;
+}
+td.case-list-content-table-header-row-title{
+	font-weight: bold;
+}
+input.subscription-details-input:disabled{
+	background-color: white;
+	color: black;
+}
+
+//*custom pagination
+.Subscriptions{
+	ul#customPagination{
+		list-style: none;
+		border-collapse: collapse;
+		display: flex;
+		margin-top: 1.5em;
+		justify-content: flex-end;
+
+		li{
+			color: #7e858b;
+			padding: 0px 10px;
+			cursor: pointer !important;
+
+			&:hover{
+				//font-weight: bold;
+				color: black;
+			}
+
+			&.active{
+				//background-color: gray;
+				color: black;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+#warranty-rma-form legend{
+	text-align: center;
+}
+h2.warranty-rma-form__title{
+	margin-top: 1em;
+	text-align: center;
+}
+
+
+//* new styles for subscription edits
+
+.product-subscription-row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin: 0;
+	height: fit-content;
+
+	.product-subscription-wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+		// padding: 1em;
+		// background-color: #f5f5f5; 
+		// width: inherit;
+		// transition: width .6s;
+
+		.product-subscription-left{
+			width: 50%;
+			background-color: white;
+			padding: 1em;
+			text-align: center;
+			display: flex;
+			flex-flow: column;
+			justify-content: space-between;
+			z-index: 20;
+			transition: transform .6s;
+			border: 1em solid $sc-color-theme-content-background; 
+			margin-bottom: 20px;
+
+			.subscription-description-title{
+				font-weight: bold;
+			}
+
+			.p_price span{
+				font-size: 20px;
+				font-weight: bold;
+			}
+			.p_enddate{
+				margin-top: 1em;
+				margin-bottom: 1em;
+			}
+		}
+		.product-subscription-right{
+			width: 50%;
+			padding: 1em;
+			padding-top: 0;
+			display: flex;
+			flex-flow: column;
+			justify-content: space-evenly;
+			transition: transform .6s;
+			background-color: $sc-color-theme-content-background; 
+			border: 1em solid $sc-color-theme-content-background; 
+			margin-bottom: 20px;
+
+			select.subscription-details-input{
+				cursor: pointer;
+			}
+		}
+
+		&.overlap-on{
+			flex-wrap: nowrap;
+
+			.product-subscription-left{
+				transform: translateX(50%);
+			}
+			.product-subscription-right{
+				transform: translateX(-50%);
+			}
+		}
+		&.overlap-off{
+
+			.product-subscription-left{
+				transform: translateX(0%);
+			}
+			.product-subscription-right{
+				transform: translateX(0%);
+			}
+		}
+
+		.button-update-suscription{
+			align-self: center;
+			margin-top: 2em;
+		}
+
+		@media(max-width: 768px){
+			height: fit-content;
+			transition: height;
+
+			.product-subscription-left,
+			.product-subscription-right{
+				width: 100%;
+			}
+			&.overlap-on{
+				flex-wrap: wrap;
+				height: 350px;
+	
+				.product-subscription-left{
+					transform: translateX(0%);
+				}
+				.product-subscription-right{
+					transform: translateY(-110%);
+				}
+			}
+			&.overlap-off{
+				height: max-content;
+	
+				.product-subscription-left{
+					transform: translateX(0%);
+				}
+				.product-subscription-right{
+					transform: translateY(-10%);
+				}
+			}
+		}
+	}
+}
+
+
+//*responsive fixes for list
+.Subscriptions{
+	
+	.Subscriptions__title{
+		margin-bottom: 1em;
+	}
+	.subscription-list-mobile-title{
+		display: none;
+	}
+	@media(max-width: 991px){
+		.case-list-content-table-header-row-title{
+			font-size: 17px;
+		}
+		.subscription-list-mobile-title{
+			display:block;
+			margin-right: 5px;
+			font-weight: bold;
+		}
+		.case-list-recordviews-table tr{
+			padding-top: 7px;
+			padding-bottom: 7px;
+		}
+		.case-list-recordviews-table td{
+			width: inherit;
+			display: flex;
+		}
+	}
+}
+
+.global-sub-info .subscription-details-input{
+    margin: 0 auto;
+	text-align: center;
+}
+
+.subscription-btn-wrapper{
+	text-align: center;
+	width: 100%;
+}
+
+button.sub-delete-item{
+	padding: 7px 15px;
+	border-radius: 1em;
+	color: tomato;
+	line-height: 1em;
+	background-color: transparent;
+	border: 1px solid tomato;
+	text-decoration: none;
+	cursor: pointer;
+
+	&:hover, &:focus{
+		color: white;
+		background-color: tomato;
+	}
+}
+
+//*---- modal
+
+.subscription-delete-modal{
+	.modal-content{
+		padding: 2em;
+
+		.delete-content{
+			text-align: center;
+			margin-bottom: 1em;
+			color: black;
+		}
+
+		.button-row{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+
+			.sub-delete-item{
+				min-width: 150px;
+				line-height: 1em;
+			}
+
+			.button-tertiary{
+				padding: 7px 15px;
+				min-width: 150px;
+				line-height: 1em;
+			}
+		}
+	}
+}

@@ -1,0 +1,34 @@
+<customlist scriptid="customlist_kd_item_grinds">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>T</ismatrixoption>
+  <isordered>T</isordered>
+  <name>Grinds</name>
+  <customvalues>
+    <customvalue scriptid="val_235489_5458369_sb1_888">
+      <abbreviation>Whole Bean</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Whole Bean</value>
+    </customvalue>
+    <customvalue scriptid="val_235490_5458369_sb1_211">
+      <abbreviation>Drip Filter</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Drip Filter</value>
+    </customvalue>
+    <customvalue scriptid="val_235491_5458369_sb1_324">
+      <abbreviation>Espresso</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Espresso</value>
+    </customvalue>
+    <customvalue scriptid="val_235492_5458369_sb1_741">
+      <abbreviation>Plunger</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Plunger</value>
+    </customvalue>
+    <customvalue scriptid="val_235493_5458369_sb1_835">
+      <abbreviation>Stovetop</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Stovetop</value>
+    </customvalue>
+  </customvalues>
+</customlist>

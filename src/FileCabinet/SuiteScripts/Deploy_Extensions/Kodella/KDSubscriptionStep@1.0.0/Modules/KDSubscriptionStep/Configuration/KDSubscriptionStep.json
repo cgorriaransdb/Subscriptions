@@ -1,0 +1,12 @@
+{
+    "type": "object",
+    "properties": { 
+        "KDSubscriptionStep.config": {
+            "group": "extensions",
+            "subtab": "KDSubscriptionStep_subtab",
+            "type": "boolean",
+            "title": "Pay upfront subscriptions",
+            "description": "Enable pay upfront subscriptions"
+        }
+    }
+}

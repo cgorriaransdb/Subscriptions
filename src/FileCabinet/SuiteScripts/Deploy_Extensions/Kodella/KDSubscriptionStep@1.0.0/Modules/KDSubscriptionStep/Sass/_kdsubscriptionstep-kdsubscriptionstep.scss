@@ -1,0 +1,235 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.kdsubscriptionstep-info-card {
+    @extend .info-card;
+}
+
+.kdsubscriptionstep-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}
+
+.checkout-sub-radio-label{
+	text-align: center;
+	width: 8em;
+	border-radius: 40px;
+	color: white;
+	padding: 7px;
+	//background-color: #808080;
+	background-color: $sc-button-secondary-background-color;
+	cursor: pointer;
+	&:active, &:focus{
+		color: $sc-button-secondary-active-text-color;
+		background: $sc-button-secondary-active-background-color;
+		border-color: $sc-button-secondary-active-border-color;
+	}
+	&:hover{
+		color: $sc-button-secondary-hover-text-color;
+		background: $sc-button-secondary-hover-background-color;
+		border-color: $sc-button-secondary-hover-border-color;
+		text-decoration: none;
+	}
+}
+
+#custom-subscription-step .checkout-sub-card-row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 40px;
+    
+
+		.checkout-sub-card{
+			width: 210px;
+			//height: 300px;
+			height: fit-content;
+			background-color: $sc-color-theme-content-background;
+			padding: 20px 15px;
+			margin: 10px 0px;
+
+			.checkout-sub-card-header{
+				height: 25%;
+				margin-bottom: 20px;
+				padding-right: 10px;
+				text-align: center;
+				&.border-bottom-title{
+					margin-bottom: 10px;
+					border-bottom: 1px solid black;
+				}
+				
+				.checkout-sub-card-lead{
+					font-size: 20px;
+					color: black;
+				}
+			}
+			.checkout-sub-card-content{
+				margin-bottom: 2em;
+				min-height: 83px;
+
+				.checkout-sub-card-description{
+					text-align: center;
+					font-size: 15px;
+					margin-top: 1.5em;
+				}
+
+				.checkout-sub-price{
+					font-size: 18px;
+				}
+			}
+
+			.checkout-sub-card-footer{
+				text-align: center;
+
+				.checkout-sub-card-footer-radio-button{
+					display: none;
+				}
+
+				input[type="radio"]:checked + label{
+					background-color: $sc-color-primary;
+					color: white;
+				}
+			}
+		}
+}
+
+
+#pay-upfront-options{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+
+	input[name='custbody_kd_is_pay_upfront']{
+		display: none;
+	}
+
+	input[name='custbody_kd_is_pay_upfront']:checked + label{
+		background-color: black;
+		color: white;
+	}
+
+	label.checkout-sub-card-footer-radio-label {
+		text-align: center;
+		margin: 1em;
+	}
+	@media(max-width: 768px){
+		justify-content: center;
+	}
+
+}
+
+#custom-subscription-step .order-wizard-step-title{
+	margin-bottom: 10px;
+	margin-top: 3em;
+}
+
+//review
+
+#custom-subscription-step .custom-review-subscription-options-section{
+	padding: 30px;
+
+	@media(max-width: 767px){
+		padding: 0px;
+		margin-bottom: 15px;
+	}
+
+	.order-wizard-showpayments-module-section-header{
+		margin-bottom: 15px;
+	}
+
+	.custom-review-subscription-options-wrapper{
+		padding: 15px;
+		border: 1px solid black;
+		width: 49%;
+
+		@media(max-width: 768px){
+			width: 100%;
+		}
+		.custom-review-option-line{
+			margin-bottom: 5px;
+
+			.custom-review-title {
+				font-weight: bold;
+			}
+
+		}
+
+	}
+
+	
+}
+
+.custom-subscription-alert{
+	// font-family: 'SohneBuch', sans-serif;
+	font-weight: bold;
+	color: #d14414;
+	padding: 5px 10px;
+	border-left: 2px solid #d14414;
+	width: fit-content;
+  }
+  
+
+  //* ----- cart preview styles
+
+  #checkout-cartpreview-table-container{
+	  padding: 10px;
+	  width: 100%;
+	  background-color: $sc-color-theme-content-background;
+	  margin-bottom: 20px;
+	  .checkout-subscriptions-lead{
+		padding-top: 5px;
+		color: black;
+		font-size: 16px;
+		// font-family: 'SohneLeicht';
+		margin-bottom: 10px;
+	}
+	.checkout-cartpreview-table{
+		width: 100%; 
+	}
+	.checkout-cartpreview-table thead th{
+		padding-top: 5px;
+		color: black;
+		font-size: 16px;
+		// font-family: 'SohneLeicht';
+	}
+	.checkout-cartpreview-table tbody tr{
+		border-top: 2px solid #787977;
+		opacity: 0.4;
+	}
+	.checkout-cartpreview-table tbody td{
+		padding: 10px;
+		font-size: 14px;
+		color: black;
+		// font-family: 'SohneLeicht';
+	}
+	.checkout-cartpreview-table tbody .cartpreview-itemName{
+		font-weight: bold;
+		font-size: 16px;
+	}
+	.checkout-cartpreview-table tbody img{
+		max-height: 5em;
+	}
+	.checkout-cartpreview-table .cartpreview-active-row{
+		opacity: 1;
+	}
+	.cartpreview-mobile-info{
+		display: none;
+	}
+	@media(max-width: 768px){
+		thead tr{
+			display: none;
+		}
+		.cartpreview-mobile-extra-cell{
+			display: none;
+		}
+		.cartpreview-mobile-info{
+			display: block;
+		}
+	}
+}

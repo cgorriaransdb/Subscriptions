@@ -1,0 +1,29 @@
+<customlist scriptid="customlist_kd_subs_frequency">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>T</ismatrixoption>
+  <isordered>T</isordered>
+  <name>Subscription Frequency</name>
+  <customvalues>
+    <customvalue scriptid="val_237777_5458369_sb1_967">
+      <abbreviation>W</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Weekly</value>
+    </customvalue>
+    <customvalue scriptid="val_237778_5458369_sb1_286">
+      <abbreviation>F</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Fortnightly</value>
+    </customvalue>
+    <customvalue scriptid="val_237779_5458369_sb1_388">
+      <abbreviation>3</abbreviation>
+      <isinactive>F</isinactive>
+      <value>3 weeks</value>
+    </customvalue>
+    <customvalue scriptid="val_237780_5458369_sb1_857">
+      <abbreviation>M</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Monthly</value>
+    </customvalue>
+  </customvalues>
+</customlist>
